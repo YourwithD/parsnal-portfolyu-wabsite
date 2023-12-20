@@ -2,26 +2,32 @@
 import React, { useState } from "react";
 import { SiIndeed } from "react-icons/si";
 import { FaGithub } from "react-icons/fa6";
-import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp, FaRegCopyright } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
 import { MdEmail } from "react-icons/md";
 import { IoCallOutline } from "react-icons/io5";
 
 const Contact = () => {
-  const [formState, setFormState] = useState({});
+  const [data, setData] = useState({name: "", email: "", subject: "",})
 
 
-const ChangeHandler = (event) =>{
-      setFormState({ ...formState, [event.target.value]: event.target.name});
+
+const ChangeHandler = (e) =>{
+      const name = e.target.value;
+      const value = e.target.value;
+
+      setData({ ...data, [name]: value});
 };
 
-const sandEmail = () => {
+const sandEmail = (e) => {
+    
+    alert(data)
   const contact = {
     SecureToken: "1963228f-50b6-4a01-9e56-b916bff910d5",
     To : 'yourwithd@gmail.com',
-    From : formState.email,
+    From : data.email,
     Subject : "New Contact from parsnal wabsite",
-    Body : `${formState.name} conected to over email`,
+    Body : `${data.name} conected to over email`,
   };
     if (Email.sand) {
       Email.sand(contact).then(()=> alert("msg sand success"));
@@ -57,10 +63,10 @@ console.log(sandEmail)
       <div className="work p-10  pt-40 flex-[60%]">
         <form onSubmit={sandEmail}
               className="flex flex-col md:p-20  gap-5">
-          <input value={formState.name} onChange={ChangeHandler} className="h-14 shadow pl-2 bg-slate-700 text-white rounded-md " type="name" id="name" name="name" placeholder="Your Name" required />
-          <input value={formState.email} onChange={ChangeHandler} className="h-14 shadow pl-2 bg-slate-700 text-white rounded-md " id="email" type="email" name="email" placeholder="Your Email" required />
-          <textarea value={formState.Subject} onChange={ChangeHandler} className="h-40 rounded-md bg-slate-700 text-white shadow pt-2 pl-2" id="msg" type="message" name="subject" placeholder="Write something.." ></textarea>
-          <button onClick={sandEmail} type="submit" className="p-2 border  flex m-auto mt-10 bg-transparent  hover:bg-pink-950 rounded text-white font-semibold ">
+          <input value={data.name} onChange={ChangeHandler} className="h-14 shadow pl-2 bg-slate-700 text-white rounded-md " type="name" id="name" name="name" placeholder="Your Name" required />
+          <input value={data.email} onChange={ChangeHandler} className="h-14 shadow pl-2 bg-slate-700 text-white rounded-md " id="email" type="email" name="email" placeholder="Your Email" required />
+          <textarea value={data.Subject} onChange={ChangeHandler} className="h-40 rounded-md bg-slate-700 text-white shadow pt-2 pl-2" id="msg" type="message" name="subject" placeholder="Write something.." ></textarea>
+          <button type="submit" className="p-2 border  flex m-auto mt-10 bg-transparent  hover:bg-pink-950 rounded text-white font-semibold ">
               Submit
               </button>
         </form>
@@ -68,7 +74,7 @@ console.log(sandEmail)
            
           </div>
           <div className="footer flex m-auto shadow-xl w-full bg-slate-800 p-5  ">
-            <h2 className="flex m-auto">Copyright c Your D.</h2>
+            <h2 className="flex m-auto"> <FaRegCopyright className="text-xl gap-2" /> 2023 YourD. Personal portfolio wabsite, India. All Rights Reserved</h2>
           </div>
     </div>
   )

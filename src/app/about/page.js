@@ -45,7 +45,7 @@ const About = () => {
                 and explore opportunities together
               </h2>
               <button  className="p-2 border animate-bounce  m-auto hover:bg-pink-950 rounded text-white font-semibold ">
-              <a href='../../../public/images/My-resume.pdf' target='_blank' download='../../../public/images/My-resume.pdf'  >  Download Cv </a>
+              <a href="../../../public/images/My_resume.pdf" target='_blank' download="../../../public/images/My_resume.pdf"  >  Download Cv </a>
               </button>
             </div>
           </div>

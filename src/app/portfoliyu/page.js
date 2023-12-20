@@ -6,18 +6,18 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 const Portfoliyu = () => {
   const [showProject, setShowProject] = useState(false)
   const project = [
-    {img: require('../../../public/images/work-1.png'),
+    {img: require('../../../public/images/teslaproject1.jpg'),
     projectName: "Tesla Clone",
-    dec: "tesla clone dece in ditile",
+    dec: "Tesla the car wabsite and the clone tesla home section with responsive desine",
     link: "https://https-github-com-yourwith-d-tesla.vercel.app/"},
 
     {img: require('../../../public/images/work-2.png'),
-    projectName: "Tesla Clone",
-    dec: "tesla clone dece in ditile",
+    projectName: "Youtube Clone",
+    dec: "Youtube Home page clone with search functionality and  where you watch video ",
     link: "https://https-github-com-yourwith-d-tesla.vercel.app/"},
     {img: require('../../../public/images/work-3.png'),
-    projectName: "Tesla Clone",
-    dec: "tesla clone dece in ditile",
+    projectName: "Your D",
+    dec: "Your D this is portfoliyu wabsite ",
     link: "https://https-github-com-yourwith-d-tesla.vercel.app/"}, 
   ]
   return (
@@ -36,14 +36,14 @@ const Portfoliyu = () => {
            {
              project.map(item =>{
                return(
-                <div className="work1 relative overflow-hidden m-5   rounded-sm">
+                <div className="work1 relative overflow-hidden flex text-center justify-center m-5   rounded-sm">
             <Image
             src = {item.img}
               width={200}
-              height={200}
+              height={100}
               alt="work1"
               onMouseEnter={()=> setShowProject(true)}
-              className={`rounded-sm block w-[100%]  ${showProject ? "scale-110 origin-center" : ""}`}
+              className={`rounded-sm h-full bg-cover block   ${showProject ? "scale-110 origin-center" : ""}`}
             />
             <div onMouseLeave={()=> setShowProject(false)} className={`workinfo hover:h-full  hover:animate-bounce  absolute left-0 bottom-0 text-center justify-center m-auto flex flex-col overflow-hidden  delay-100 w-full  bg-gradient-to-b from-violet-700 to-transparent ${showProject ? "h-full" : "h-0"}`} >
               <h2 className="text-3xl font-bold ">{item.projectName}</h2>
