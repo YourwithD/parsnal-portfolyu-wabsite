@@ -56,7 +56,7 @@ console.log(sandEmail)
                 <li className="text-3xl hover:text-pink-950 p-3 "><a href="https://wa.me/9071126712"><FaWhatsapp /></a></li>
               </ul>
       </div>
-      <button className="p-2 border  mt-10 bg-transparent hover:bg-pink-950 rounded text-white font-semibold ">
+      <button className="p-2 border animate-bounce  mt-10 bg-transparent hover:bg-pink-950 rounded text-white font-semibold ">
               Download Cv
               </button>
       </div>
@@ -66,7 +66,7 @@ console.log(sandEmail)
           <input value={data.name} onChange={ChangeHandler} className="h-14 shadow pl-2 bg-slate-700 text-white rounded-md " type="name" id="name" name="name" placeholder="Your Name" required />
           <input value={data.email} onChange={ChangeHandler} className="h-14 shadow pl-2 bg-slate-700 text-white rounded-md " id="email" type="email" name="email" placeholder="Your Email" required />
           <textarea value={data.Subject} onChange={ChangeHandler} className="h-40 rounded-md bg-slate-700 text-white shadow pt-2 pl-2" id="msg" type="message" name="subject" placeholder="Write something.." ></textarea>
-          <button type="submit" className="p-2 border  flex m-auto mt-10 bg-transparent  hover:bg-pink-950 rounded text-white font-semibold ">
+          <button type="submit" className="p-2 border animate-bounce  flex m-auto mt-10 bg-transparent  hover:bg-pink-950 rounded text-white font-semibold ">
               Submit
               </button>
         </form>

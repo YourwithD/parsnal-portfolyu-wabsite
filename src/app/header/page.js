@@ -4,22 +4,18 @@ import Image from "next/image";
 import tac from "../../../public/images/tacpng.png";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { SiIndeed } from "react-icons/si";
-import { CiLight } from "react-icons/ci";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa6";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
-import { MdLightMode } from "react-icons/md";
 const Header = () => {
   const [openManu, setOpenManu] = useState(false)
-  const [lightMode, setLightMode] = useState(false)
-
   return (
     <div>
-      <div className={`header w-screen h-100vh text-white ${lightMode ? "text-black bg-white" : ""}`}>
+      <div className="header w-screen h-100vh text-white">
         <div className="contenor">
-          <nav className={`flex justify-between fixed w-screen bg-slate-900 z-40 pt-3 ${lightMode ? "bg-slate-400" : ""} ${openManu ? "w-full h-screen" : ""} `}>
+          <nav className={`flex justify-between fixed w-screen bg-slate-900 z-40 pt-3  ${openManu ? "w-full h-screen" : ""} `}>
             <div onClick={()=> setOpenManu(true)}  className="flex md:hidden text-center">
               
               <RxHamburgerMenu className="text-4xl font-bold m-2 " />
@@ -66,7 +62,7 @@ const Header = () => {
               </span>
               <h2 className="text-6xl  ">Wab Doveluper</h2>
               <h2 className="flex-wrap md:text-2xl p-10 ">
-                I work with the react. I am a tech enthusiast, and I love
+                I work with the react js. I am a tech enthusiast, and I love
                 exploring new technology. Therefore, I prioritize every
                 component of my work and hook them dedicatedly. As a result, I
                 am always ready to embrace new and required technology.

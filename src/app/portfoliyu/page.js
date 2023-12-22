@@ -11,11 +11,11 @@ const Portfoliyu = () => {
     dec: "Tesla the car wabsite and the clone tesla home section with responsive desine",
     link: "https://https-github-com-yourwith-d-tesla.vercel.app/"},
 
-    {img: require('../../../public/images/work-2.png'),
+    {img: require('../../../public/images/teslaproject1.jpg'),
     projectName: "Youtube Clone",
     dec: "Youtube Home page clone with search functionality and  where you watch video ",
     link: "https://https-github-com-yourwith-d-tesla.vercel.app/"},
-    {img: require('../../../public/images/work-3.png'),
+    {img: require('../../../public/images/teslaproject1.jpg'),
     projectName: "Your D",
     dec: "Your D this is portfoliyu wabsite ",
     link: "https://https-github-com-yourwith-d-tesla.vercel.app/"}, 
@@ -35,8 +35,8 @@ const Portfoliyu = () => {
              
            {
              project.map(item =>{
-               return(
-                <div className="work1 relative overflow-hidden flex text-center justify-center m-5   rounded-sm">
+               return (
+                <div key={project} className="work1 relative overflow-hidden flex text-center justify-center m-5   rounded-sm">
             <Image
             src = {item.img}
               width={200}

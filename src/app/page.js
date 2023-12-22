@@ -6,8 +6,6 @@ import Skill from "./skill/page";
 
 
 export default function Home() {
-  <script src="https://smtpjs.com/v3/smtp.js">
-  </script>
 
   
   return (

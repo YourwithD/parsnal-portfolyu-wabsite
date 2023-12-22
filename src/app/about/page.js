@@ -12,14 +12,14 @@ const About = () => {
             
                 <Image
                   src={myimg2}
-                  alt="man"
+                  alt="YourD"
                   width={2600}
                   height={2440}
                   className="hidden md:flex"
                 />
                 <Image
                   src={myimg2}
-                  alt="man"
+                  alt="YourD"
                   width={400}
                   height={340}
                   className="md:hidden"
@@ -31,16 +31,16 @@ const About = () => {
               
               <h2 className="flex-wrap text-white text-[14px] md:text-2xl  p-10 ">
                 Hi there! I'm Dharmendra a passionate web developer. I have a solid
-                foundation in React, along with popular libraries like Redux for
+                foundation in React js, along with popular libraries like Redux for
                 managing application state and Framer Motion for adding
                 captivating animations to web projects. I'm also skilled in
-                using CSS frameworks such as Tailwind CSS UI to style
-                components and create user-friendly layouts. 🌐 In addition to
+                using CSS frameworks such as Bootstrap and Tailwind CSS UI to style
+                components and create user-friendly layouts. In addition to
                 my frontend expertise, I have a decent understanding of backend
-                technologies like Node.js and Express.js. This knowledge enables
+                technologies like Node.js and Express js. This knowledge enables
                 me to collaborate effectively with backend teams, bridging the
                 gap between the front and back ends of web development projects.
-                🚀 I'm excited to continue my journey in the tech world, eager
+               I'm excited to continue my journey in the tech world, eager
                 to learn and contribute to innovative projects. Let's connect
                 and explore opportunities together
               </h2>
