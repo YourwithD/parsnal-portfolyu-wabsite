@@ -12,10 +12,8 @@ import { CgMail } from "react-icons/cg";
 const Header = () => {
   const [openManu, setOpenManu] = useState(false)
   return (
-    <div>
-      <div className="header w-screen h-100vh text-white">
-        <div className="contenor">
-          <nav className={`flex justify-between fixed w-screen bg-slate-900 z-40 pt-3  ${openManu ? "w-full h-screen" : ""} `}>
+    <>
+      <nav className={`flex justify-between fixed w-screen  text-white  bg-slate-900 z-40   ${openManu ? "w-full h-screen" : ""} `}>
             <div onClick={()=> setOpenManu(true)}  className="flex md:hidden text-center">
               
               <RxHamburgerMenu className="text-4xl font-bold m-2 " />
@@ -28,34 +26,37 @@ const Header = () => {
             </div></Link>
             <div className={`md:flex ${openManu ? "flex w-full mt-10 h-full translate-x-5 delay-500 ease-in-out " : "hidden"} `}>
               <ul className={`gap-5  text-2xl ${openManu ? "flex-col " : "flex"} `}>
-                <li onClick={()=> setOpenManu(false)} className="cursor-pointer text-white p-5 hover:underline ">
+                <li onClick={()=> setOpenManu(false)} className="cursor-pointer text-white p-2 hover:underline ">
                   <a href="#home">Home</a>
                 </li>
-                <li onClick={()=> setOpenManu(false)} className="cursor-pointer text-white p-5 hover:underline ">
+                <li onClick={()=> setOpenManu(false)} className="cursor-pointer text-white p-2 hover:underline ">
                   <a href="#about">About</a>
                 </li>
-                <li onClick={()=> setOpenManu(false)} className="cursor-pointer text-white p-5 hover:underline ">
+                <li onClick={()=> setOpenManu(false)} className="cursor-pointer text-white p-2 hover:underline ">
                   <a href="#skills">Skills</a>
                 </li>
-                <li onClick={()=> setOpenManu(false)} className="cursor-pointer text-white p-5 hover:underline ">
+                <li onClick={()=> setOpenManu(false)} className="cursor-pointer text-white p-2 hover:underline ">
                   <a href="#portfoliyu">Portfoliyu</a>
                 </li>
-                <li onClick={()=> setOpenManu(false)} className="cursor-pointer text-white p-5 hover:underline ">
+                <li onClick={()=> setOpenManu(false)} className="cursor-pointer text-white p-2 hover:underline ">
                   <a href="#contact">Contact</a>
                 </li>
               </ul>
                
             </div>
-            <div className={`btn text-center mb-3 m-2 gap-3 flex ${openManu ? "hidden" : ""} `}>
-          <Link href='/#contact'>  <button className=" border md:mr-10  p-2 text-xl   text-center  bg-pink-950 rounded text-white font-semibold ">
+            <div className={`btn text-center m-2 md:mr-10  flex ${openManu ? "hidden" : ""} `}>
+          <Link href='/#contact'>  <button className=" border  p-1  text-xl   text-center  bg-pink-950 rounded text-white font-semibold ">
                 Contact
               </button></Link>
              </div>
               <div onClick={()=> setOpenManu(false)} className={`cross ${openManu ? "flex" : "hidden"} `}><IoIosCloseCircleOutline  className={`text-5xl pt-1  text-center font-bold mr-5 ${openManu ? "flex" : "hidden"} `}/></div>
            
           </nav>
+      <div className="header w-screen h-fit bg-slate-950 right-0 text-white">
+        <div className="contenor">
+          
           <div id="home" className="homesection md:flex  justify-between text-center w-screen h-full ">
-            <div className="left text-center justify-center p-5  pt-40 md:pl-24 ">
+            <div className="left text-center justify-center md:w-[65%] p-5  pt-20 md:pl-10 ">
               <span className="text-6xl  ">Hi, I'm </span>
               <span className="text-6xl font-bold hover:animate-ping animate-pulse hover:translate-x-full cursor-pointer text-pink-950 ">
                 Dharmendra,
@@ -80,7 +81,7 @@ const Header = () => {
               </ul>
               </div>
             </div>
-            <div className="right mt-auto md:flex hidden md:p-40">
+            <div className="right md:w-[30%] m-auto md:flex hidden">
               <div className="  ">
                 <Image
                   src={tac}
@@ -94,7 +95,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

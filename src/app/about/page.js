@@ -4,8 +4,8 @@ import myimg2 from "../../../public/images/myimg2.png";
 const About = () => {
   return (
 
-    <div  className="w-screen h-full   text-white">
-      <div className="aboutsection pt-20 md:flex justify-items-center text-center">
+    <>
+      <div className="w-screen h-fit bg-slate-950 text-white aboutsection pt-20 md:flex justify-items-center text-center">
       <div id="about" className="skill pt-24 absolute text-center  m-auto w-full"><h2 className='text-4xl md:text-6xl underline font-bold'>About</h2></div>
       
             <div className="left border mr-20 flex-[25%] mt-40   sm:mt-auto  ml-20 bg-slate-900 rounded-t-full text-center flex m-auto  justify-center">
@@ -49,7 +49,7 @@ const About = () => {
               </button>
             </div>
           </div>
-    </div>
+    </>
   )
 }
 
