@@ -5,25 +5,19 @@ const About = () => {
   return (
 
     <>
-      <div className="w-screen h-fit bg-slate-950 text-white aboutsection pt-20 md:flex justify-items-center text-center">
-      <div id="about" className="skill pt-24 absolute text-center  m-auto w-full"><h2 className='text-4xl md:text-6xl underline font-bold'>About</h2></div>
+      <div id="about" className="skill pt-16 absolute justify-center text-center  m-auto w-full"><h2 className=' justify-center text-center text-4xl  md:text-6xl underline font-bold'>About</h2></div>
+      <div className="w-full text-white aboutsection pt-20 md:flex justify-items-center text-center">
       
-            <div className="left border mr-20 flex-[25%] mt-40   sm:mt-auto  ml-20 bg-slate-900 rounded-t-full text-center flex m-auto  justify-center">
+            <div className="left  mr-20 flex-[25%] mt-40 bg-slate-700    border pt-32 rounded-t-full   sm:mt-auto  ml-20  text-center flex m-auto  justify-center">
             
                 <Image
                   src={myimg2}
                   alt="YourD"
-                  width={2600}
-                  height={2440}
-                  className="hidden md:flex"
+                  width={380}
+                  height={250}
+                  className=" lg::pt-16  bg-slate-700 "
                 />
-                <Image
-                  src={myimg2}
-                  alt="YourD"
-                  width={400}
-                  height={340}
-                  className="md:hidden"
-                />
+               
               </div>
            
             
@@ -53,4 +47,4 @@ const About = () => {
   )
 }
 
-export default About
+export default About 

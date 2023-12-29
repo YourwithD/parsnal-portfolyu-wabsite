@@ -13,33 +13,33 @@ const Header = () => {
   const [openManu, setOpenManu] = useState(false)
   return (
     <>
-      <nav className={`flex justify-between fixed w-screen  text-white  bg-slate-900 z-40   ${openManu ? "w-full h-screen" : ""} `}>
-            <div onClick={()=> setOpenManu(true)}  className="flex md:hidden text-center">
+      <nav className={`flex justify-between fixed w-full   text-white  bg-slate-700 z-40   ${openManu ? "w-full h-[50%]" : ""} `}>
+            <div onClick={()=> setOpenManu(true)}  className="flex bg-slate-700 md:hidden text-center">
               
-              <RxHamburgerMenu className="text-4xl font-bold m-2 " />
+              <RxHamburgerMenu className="text-4xl font-bold m-2 bg-slate-700  " />
             </div>
-           <Link href="/"> <div className={`text-4xl flex text-center cursor-pointer p-2 ${openManu ? "hidden" : ""} `}>
+           <Link href="/"> <div className={`text-4xl bg-slate-700  flex text-center cursor-pointer p-2 ${openManu ? "hidden" : ""} `}>
               {" "}
-              Your <span className="text-pink-950 font-bold animate-bounce text-4xl ">
+              Your <span className="text-pink-950 font-bold bg-slate-700  animate-bounce text-4xl ">
                 D
               </span>{" "}
             </div></Link>
-            <div className={`md:flex ${openManu ? "flex w-full mt-10 h-full translate-x-5 delay-500 ease-in-out " : "hidden"} `}>
-              <ul className={`gap-5  text-2xl ${openManu ? "flex-col " : "flex"} `}>
-                <li onClick={()=> setOpenManu(false)} className="cursor-pointer text-white p-2 hover:underline ">
-                  <a href="#home">Home</a>
+            <div className={`md:flex ${openManu ? "flex w-full mt-10 h-[50%] translate-x-5 bg-transparent   delay-500 ease-in-out " : "hidden"} `}>
+              <ul className={`gap-5 bg-slate-700   text-2xl ${openManu ? "flex-col " : "flex"} `}>
+                <li onClick={()=> setOpenManu(false)} className="cursor-pointer bg-slate-700  p-2 hover:underline ">
+                  <a className="bg-slate-700 " href="#home">Home</a>
                 </li>
-                <li onClick={()=> setOpenManu(false)} className="cursor-pointer text-white p-2 hover:underline ">
-                  <a href="#about">About</a>
+                <li onClick={()=> setOpenManu(false)} className="cursor-pointer bg-slate-700  p-2 hover:underline ">
+                  <a className="bg-slate-700 " href="#about">About</a>
                 </li>
-                <li onClick={()=> setOpenManu(false)} className="cursor-pointer text-white p-2 hover:underline ">
-                  <a href="#skills">Skills</a>
+                <li onClick={()=> setOpenManu(false)} className="cursor-pointer bg-slate-700  p-2 hover:underline ">
+                  <a className="bg-slate-700 " href="#skills">Skills</a>
                 </li>
-                <li onClick={()=> setOpenManu(false)} className="cursor-pointer text-white p-2 hover:underline ">
-                  <a href="#portfoliyu">Portfoliyu</a>
+                <li onClick={()=> setOpenManu(false)} className="cursor-pointer bg-slate-700  p-2 hover:underline ">
+                  <a className="bg-slate-700 " href="#portfoliyu">Portfoliyu</a>
                 </li>
-                <li onClick={()=> setOpenManu(false)} className="cursor-pointer text-white p-2 hover:underline ">
-                  <a href="#contact">Contact</a>
+                <li onClick={()=> setOpenManu(false)} className="cursor-pointer bg-slate-700  p-2 hover:underline ">
+                  <a className="bg-slate-700 " href="#contact">Contact</a>
                 </li>
               </ul>
                
@@ -49,10 +49,10 @@ const Header = () => {
                 Contact
               </button></Link>
              </div>
-              <div onClick={()=> setOpenManu(false)} className={`cross ${openManu ? "flex" : "hidden"} `}><IoIosCloseCircleOutline  className={`text-5xl pt-1  text-center font-bold mr-5 ${openManu ? "flex" : "hidden"} `}/></div>
+              <div onClick={()=> setOpenManu(false)} className={`cross bg-slate-700  ${openManu ? "flex" : "hidden"} `}><IoIosCloseCircleOutline  className={`text-5xl pt-1 bg-slate-700 text-center font-bold mr-5 ${openManu ? "flex" : "hidden"} `}/></div>
            
           </nav>
-      <div className="header w-screen h-fit bg-slate-950 right-0 text-white">
+      <div className="header w-screen  bg-slate-950 right-0 text-white">
         <div className="contenor">
           
           <div id="home" className="homesection md:flex  justify-between text-center w-screen h-full ">
