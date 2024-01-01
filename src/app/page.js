@@ -10,12 +10,12 @@ export default function Home() {
 
   
   return (
-    <>
-      <Header />
-      <About />
-      <Skill />
-      <Portfoliyu />
-      <Contact />
-    </>
+    <div className="  ">
+      <Header className='w-full h-full' />
+      <About className='w-full h-full' />
+      <Skill className='w-full h-full' />
+      <Portfoliyu className='w-full h-full' />
+      <Contact className='w-full h-full' />
+    </div>
   )
 }

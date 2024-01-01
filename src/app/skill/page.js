@@ -8,7 +8,7 @@ const Skill = () => {
     <div className='w-screen h-fit'>
       <div id="skills" className="skill pt-16  absolute text-center  m-auto w-full"><h2 className='md:text-6xl text-4xl underline  font-bold'>Skills & Tools</h2></div>
       <div className="tool flex justify-center gap-5 text-center flex-wrap  pt-48 ">
-        <ul className='flex flex-wrap gap-12 p-10  md:pl-64 md:pr-64 text-center justify-center '>
+        <ul className='flex flex-wrap gap-12 p-10   sm:pl-64 sm:pr-64 text-center justify-center '>
           <a href='https://html.com/' ><span>HTML5</span><FaHtml5 className=' hover:text-pink-700 cursor-pointer text-5xl  md:text-8xl '/></a>
           <a href='https://css3.com/' ><span>CSS3</span><FaCss3  className=' hover:text-pink-700 cursor-pointer text-5xl  md:text-8xl'/></a>
           <a href='https://www.javascript.com/' ><span>Javascript</span><TbBrandJavascript className=' hover:text-pink-700 cursor-pointer text-5xl  md:text-9xl pt-2'/></a>

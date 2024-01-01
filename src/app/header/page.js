@@ -52,7 +52,7 @@ const Header = () => {
               <div onClick={()=> setOpenManu(false)} className={`cross bg-slate-700  ${openManu ? "flex" : "hidden"} `}><IoIosCloseCircleOutline  className={`text-5xl pt-1 bg-slate-700 text-center font-bold mr-5 ${openManu ? "flex" : "hidden"} `}/></div>
            
           </nav>
-      <div className="header w-screen  bg-slate-950 right-0 text-white">
+      <div className="header w-full  bg-slate-950 right-0 text-white">
         <div className="contenor">
           
           <div id="home" className="homesection md:flex  justify-between text-center w-screen h-full ">
@@ -61,7 +61,7 @@ const Header = () => {
               <span className="text-6xl font-bold hover:animate-ping animate-pulse hover:translate-x-full cursor-pointer text-pink-950 ">
                 Dharmendra,
               </span>
-              <h2 className="text-6xl  ">Wab Doveluper</h2>
+              <h2 className="text-6xl  ">Web Doveluper</h2>
               <h2 className="flex-wrap md:text-2xl p-10 ">
                 I work with the react js. I am a tech enthusiast, and I love
                 exploring new technology. Therefore, I prioritize every

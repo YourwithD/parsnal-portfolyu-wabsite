@@ -7,10 +7,14 @@
   margin: 0;
   background-color: rgb(15, 13, 29);
   color: white;
+  box-sizing: border-box;
+
 
 
 
 }
 .html{
   scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
 }

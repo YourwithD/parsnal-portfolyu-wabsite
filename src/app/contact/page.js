@@ -12,7 +12,7 @@ const Contact = () => {
     return (
       <>
     <div className='w-screen bg-slate-950 h-fit text-white'>
-      <div id="contact" className="skill pt-24 absolute pb-10 text-center  m-auto w-full"><h2 className='text-4xl md:text-6xl underline font-bold'>Contact</h2></div>
+      <div id="contact" className="skill pt-24 absolute mb-10 text-center  m-auto w-full"><h2 className='text-4xl md:text-6xl underline font-bold'>Contact</h2></div>
       <div className="aboutsection  flex flex-wrap-reverse  justify-items-center m-auto text-center">
       <div className="work p-10 justify-start text-start pl-20  flex-[35%] m-auto">
         <h2 className="text-6xl pb-3  font-bold">Contact Me</h2>
@@ -44,8 +44,8 @@ const Contact = () => {
       </div>
            
           </div>
-          <div className="footer flex m-auto shadow-xl w-screen bg-slate-700 p-2    ">
-            <h2 className="flex m-auto text-[10px] "> <FaRegCopyright className="mt-[2px] text-[10px]  gap-2" /> 2023 YourD. Personal portfolio wabsite, India. All Rights Reserved</h2>
+          <div className="footer flex m-auto shadow-xl w-full bg-slate-700 p-2    ">
+            <h2 className="flex m-auto text-[10px] bg-transparent "> <FaRegCopyright className="mt-[2px] text-[10px]  gap-2" /> 2023 YourD. Personal portfolio wabsite, India. All Rights Reserved</h2>
           </div>
     </div>
     </>
